@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <h1>Create Post</h>
+        </div>
+      <div class="row">
+        <form class="col s12 " method="POST" action="/blogs/create-blog">
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Title" id="first_name" type="text" class="validate" name="title" />
+              <label for="first_name">Title</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="last_name" type="text" class="validate" name="author" />
+              <label for="last_name">Author</label>
+            </div>
+            <div class="input-field col s12">
+                <textarea id="textarea1" name="description" class="materialize-textarea"></textarea>
+          <label for="textarea1">Post</label>
+              </div>
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">Create post</button>
+          
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html
